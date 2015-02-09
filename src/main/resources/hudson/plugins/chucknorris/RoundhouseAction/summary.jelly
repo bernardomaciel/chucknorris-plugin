@@ -5,7 +5,7 @@
     </tr>
     <style>
         .chuck {
-            background-image: url(${rootURL}/plugin/chucknorris/images/<j:out value="${from.style.toString().toLowerCase()}"/>.jpg);
+            background-image: url(${rootURL}/plugin/chucknorris/images/<j:out value="${it.style.toString().toLowerCase()}"/>.jpg);
             	padding-bottom: 270px !important;
             	background-repeat: no-repeat;
             	background-position: right bottom;
