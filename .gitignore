@@ -1,0 +1,12 @@
+#IDEA
+*iml
+*ipr
+*iws
+*.ids
+
+#KDE files
+.directory
+
+#Project specific
+target
+

@@ -8,7 +8,7 @@
 
     <groupId>org.jvnet.hudson.plugins</groupId>
     <artifactId>chucknorris</artifactId>
-    <version>0.6-SNAPSHOT</version>
+    <version>0.6</version>
     <name>ChuckNorris Plugin</name>
     <description>Displays a picture of Chuck Norris (instead of Jenkins the butler) and a random Chuck Norris 'The Programmer' fact on each build page.</description>
     <url>http://wiki.jenkins-ci.org/display/JENKINS/ChuckNorris+Plugin</url>
@@ -20,6 +20,12 @@
             <name>Cliffano Subagio</name>
             <email>blah@cliffano.com</email>
             <timezone>+10</timezone>
+        </developer>
+        <developer>
+            <id>kyberorg</id>
+            <name>Alex Muravya</name>
+            <email>asm@virtalab.net</email>
+            <timezone>+3</timezone>
         </developer>
     </developers>
     <licenses>
