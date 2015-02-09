@@ -3,15 +3,18 @@
         <td><img src="${rootURL}/plugin/chucknorris/images/icon.jpg" width="48" height="48" alt="${it.displayName} Icon"/></td>
         <td style="vertical-align:middle"><j:out value="${it.fact}"/></td>
     </tr>
-    <script>
-        Element.setStyle($('main-table'), {
-            backgroundImage: 'none'
-        });
-        Element.setStyle($('main-panel'), {
-            backgroundImage: 'url(${rootURL}/plugin/chucknorris/images/<j:out value="${it.style.toString().toLowerCase()}"/>.jpg)',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'bottom right',
-            paddingBottom: '270px'
-        });
-    </script>
+    <style>
+        .chuck {
+            background-image: url(${rootURL}/plugin/chucknorris/images/<j:out value="${from.style.toString().toLowerCase()}"/>.jpg);
+            	padding-bottom: 270px !important;
+            	background-repeat: no-repeat;
+            	background-position: right bottom;
+        }
+    </style>
+     <script>
+        if($('main-table')){
+    		$('main-table').setStyle({ backgroundImage: 'none' });
+    	}
+    	$('main-panel').addClassName('chuck');
+     </script>
 </j:jelly>

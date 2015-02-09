@@ -2,17 +2,17 @@
     <img src="${rootURL}/plugin/chucknorris/images/icon.jpg" width="16" height="16" alt="${from.displayName} Icon"/><st:nbsp/><j:out value="${from.fact}"/>
     <style>
     	.chuck {
-		background-image: url(${rootURL}/plugin/chucknorris/images/<j:out value="${from.style.toString().toLowerCase()}}"/>.jpg);
-		padding-bottom: 300px !important;
-		background-repeat: no-repeat;
-		background-position: right bottom;
-	}
+			background-image: url(${rootURL}/plugin/chucknorris/images/<j:out value="${from.style.toString().toLowerCase()}"/>.jpg);
+			padding-bottom: 270px !important;
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
     </style>
     <script>
     	if($('main-table')){
 		$('main-table').setStyle({ backgroundImage: 'none' });
 	}
-	$('main-panel').addClassName('chuck-style');
+	$('main-panel').addClassName('chuck');
     </script>
 </j:jelly>
 
