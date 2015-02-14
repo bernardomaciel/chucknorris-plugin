@@ -10,11 +10,21 @@
             	background-repeat: no-repeat;
             	background-position: right bottom;
         }
+    	#tasks:after {
+    		content:"";
+    		display:block;
+    		width:100%;
+    		
+			background-image: url(${rootURL}/plugin/chucknorris/images/<j:out value="${from.style.toString().toLowerCase()}"/>.jpg);
+			padding-bottom: 270px !important;
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
     </style>
      <script>
-        if($('main-table')){
-    		$('main-table').setStyle({ backgroundImage: 'none' });
-    	}
-    	$('main-panel').addClassName('chuck');
+        //if($('main-table')){
+    	//	$('main-table').setStyle({ backgroundImage: 'none' });
+    	//}
+    	//$('main-panel').addClassName('chuck');
      </script>
 </j:jelly>
